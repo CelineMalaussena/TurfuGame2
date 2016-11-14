@@ -22,11 +22,16 @@ public class SinglePlayer extends AppCompatActivity {
 
         this.button3 = (Button) this.findViewById(R.id.button3);
 
-
         this.button4 = (Button) this.findViewById(R.id.button4);
 
         this.button5 = (Button) this.findViewById(R.id.button5);
-
+        this.button5.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent but5 = new Intent(SinglePlayer.this,QuizActivity.class);
+                startActivity(but5);
+            }
+        });
 
     }
 }
