@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- Buttons -->
+    <item name="button1" type="id"/>
+    <item name="button2" type="id"/>
+    <item name="button3" type="id"/>
+    <item name="button4" type="id"/>
+    <item name="button5" type="id"/>
+    <item name="button6" type="id"/>
+    <item name="button7" type="id"/>
+    <item name="button8" type="id"/>
+    <item name="register" type="id"/>
+    <item name="login" type="id"/>
+
+    <item name="registerLink" type="id"/>
+
+    <!-- EditText -->
+    <item name="pseudo" type="id"/>
+    <item name="age" type="id"/>
+    <item name="password" type="id"/>
+
+    <!-- Seekbar1 -->
+    <item name="seekbar1" type="id"/>
+</resources>
