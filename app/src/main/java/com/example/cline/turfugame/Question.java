@@ -4,68 +4,58 @@ package com.example.cline.turfugame;
  * Created by Alexis on 14/11/16.
  */
 
-public class Question {
-    private int ID;
-    private String QUESTION;
-    private String OPTA;
-    private String OPTB;
-    private String OPTC;
-    private String ANSWER;
-    public Question()
-    {
-        ID=0;
-        QUESTION="";
-        OPTA="";
-        OPTB="";
-        OPTC="";
-        ANSWER="";
-    }
-    public Question(String qUESTION, String oPTA, String oPTB, String oPTC,
-                    String aNSWER) {
+public class Question{
+    private int id;
+    private String question;
+    private String optionA;
+    private String optionB;
+    private String optionC;
+    private String answer;
 
-        QUESTION = qUESTION;
-        OPTA = oPTA;
-        OPTB = oPTB;
-        OPTC = oPTC;
-        ANSWER = aNSWER;
-    }
-    public int getID()
-    {
-        return ID;
-    }
-    public String getQUESTION() {
-        return QUESTION;
-    }
-    public String getOPTA() {
-        return OPTA;
-    }
-    public String getOPTB() {
-        return OPTB;
-    }
-    public String getOPTC() {
-        return OPTC;
-    }
-    public String getANSWER() {
-        return ANSWER;
-    }
-    public void setID(int id)
-    {
-        ID=id;
-    }
-    public void setQUESTION(String qUESTION) {
-        QUESTION = qUESTION;
-    }
-    public void setOPTA(String oPTA) {
-        OPTA = oPTA;
-    }
-    public void setOPTB(String oPTB) {
-        OPTB = oPTB;
-    }
-    public void setOPTC(String oPTC) {
-        OPTC = oPTC;
-    }
-    public void setANSWER(String aNSWER) {
-        ANSWER = aNSWER;
+    public Question(){
+        id = 0;
+        question = "";
+        optionA = "";
+        optionB = "";
+        optionC = "";
+        answer = "";
     }
 
+    public Question(String q, String a, String b, String c, String ans){
+        question = q;
+        optionA = a;
+        optionB = b;
+        optionC = c;
+        answer = ans;
+    }
+
+    public int getId(){
+        return id;
+    }
+    public String getQuestion() {
+        return question;
+    }
+    public String getOptionA() {
+        return optionA;
+    }
+    public String getOptionB() {
+        return optionB;
+    }
+    public String getOptionC() { return optionC; }
+    public String getAnswer() {
+        return answer;
+    }
+
+    public void setId(int newId ){ id = newId; }
+    public void setQuestion(String q) {
+        question = q;
+    }
+    public void setOptionA(String a) {
+        optionA = a;
+    }
+    public void setOptionB(String b) { optionB = b; }
+    public void setOptionC(String c) { optionC = c; }
+    public void setAnswer(String newAnswer) {
+        answer = newAnswer;
+    }
 }
